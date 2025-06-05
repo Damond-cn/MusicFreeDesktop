@@ -36,7 +36,13 @@ const config: ForgeConfig = {
       },
       ["darwin"]
     ),
-    // new MakerRpm({}),
+    new MakerRpm({
+      options: {
+        name: "MusicFree",
+        bin: "MusicFree",
+        mimeType: ["x-scheme-handler/musicfree"],
+      },
+    }),
     new MakerDeb({
       options: {
         name: "MusicFree",
